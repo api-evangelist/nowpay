@@ -1,7 +1,13 @@
 aid: nowpay
 name: Nowpay
-description: Nowpay is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: NowPay is an employer-integrated financial wellness platform whose core
+  product lets employees access their earned salary early and repay it in installments,
+  positioned as a workplace benefit rather than a consumer lender. It was surfaced as
+  a portfolio company of 500 Global and added to the API Evangelist network. As of this
+  enrichment pass NowPay publishes only a client-rendered marketing site (nowpay.cash,
+  which redirects to nowpay.com) with no public developer portal, API reference, OpenAPI,
+  SDKs, or /.well-known discovery surface; every probed path returns the single-page-app
+  shell. This profile therefore carries identity and a live domain-security probe only.
 url: https://raw.githubusercontent.com/api-evangelist/nowpay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +15,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://elasticbeanstalk-us-east-1-927288046810.s3.us-east-1.amazonaws.com/Logos/NowPay%20Logo.png
 tags:
 - Company
+- Fintech
+- Financial Wellness
+- Earned Wage Access
+- Salary Advance
+- Payroll
+- Employee Benefits
+- Embedded Finance
+- Payments
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +48,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://nowpay.cash
+  url: https://nowpay.com
+- type: DomainSecurity
+  url: security/nowpay-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
