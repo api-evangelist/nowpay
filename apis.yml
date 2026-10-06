@@ -39,7 +39,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-10-06'
 image: https://elasticbeanstalk-us-east-1-927288046810.s3.us-east-1.amazonaws.com/Logos/NowPay%20Logo.png
 tags:
 - Company
@@ -58,6 +58,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://www.nowpay.com/blog/
+  type: Blog
 - type: Website
   url: https://nowpay.com
 - type: DomainSecurity
